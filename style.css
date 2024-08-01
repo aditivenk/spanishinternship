@@ -1,0 +1,116 @@
+/* Sidebar styles */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 170px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-image: url('documents/sidebar_image.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.rightsidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 170px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-image: url('documents/sidebar_image.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* Vertical line styles */
+.vl {
+    border-left: 5px solid rgba(249, 245, 238, 0.7);
+    height: 100%;
+    position: absolute;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    margin-left: 170px;
+}
+
+.rightvl {
+    border-left: 5px solid rgba(249, 245, 238, 0.7);
+    height: 100%;
+    position: absolute;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    margin-right: 170px;
+}
+
+/* Sidebar links and headers */
+.sidenav a {
+    padding: 6px 8px 6px 20px;
+    font-size: 16px;
+    display: block;
+}
+body {
+    background-color: rgb(249, 245, 238);
+}
+/* Main content area */
+.main {
+    margin-left: 180px; /* Same as the width of the sidebar */
+    margin-right: 180px;
+}
+
+/* Responsive design */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* General font styling */
+html, body, h1, h2, h3, h4, a {
+    font-family: "arial";
+}
+
+/* Link styles */
+a:link {
+    color: rgb(17, 111, 91);
+    text-decoration: none;
+    background-color: rgba(249, 245, 238, 0.9);
+}
+
+a:visited {
+    color: rgb(17, 111, 91);
+    text-decoration: none;
+    background-color: rgba(249, 245, 238, 0.9);
+}
+
+a:hover {
+    color: rgb(203, 105, 94);
+    text-decoration: none;
+    background-color: rgba(249, 245, 238, 0.7);
+}
+
+.sidenav a.active {
+    background-color: rgba(249, 245, 238, 0.7);
+    color: rgb(203, 105, 94);
+}
+
+ul li {
+    padding-bottom: 10px; /* Adjust the value as needed */
+}
+
+.bold-line td {
+    border-bottom: 2px solid black; /* Bold line for the specified row */
+}
+.bold-line th {
+    border-bottom: 2px solid black; /* Bold line for the specified row */
+}
